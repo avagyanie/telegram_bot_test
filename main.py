@@ -9,7 +9,7 @@ dp = Dispatcher()
 
 
 async def main():
-    dp.iclude_router(router)
+    dp.include_router(router)
     await dp.start_polling(bot)
 
 
