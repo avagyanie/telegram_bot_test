@@ -1,9 +1,10 @@
+import os
 import asyncio
 from aiogram import Bot, Dispatcher
 from app.handlers import router
 
 
-bot = Bot(token='8199257283:AAGkX7KNw9YNrx8YyrUl6TEsHfDdxfkslLE')
+bot = Bot(token=os.environ.get("TOKEN"))
 dp = Dispatcher()
 
 
